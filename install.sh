@@ -4,7 +4,7 @@
 sudo apt-get install -y ctags cscope
 
 # copy vim setting to home
-cp -r ./vim ~/.vim
+cp -R ./vim ~/.vim
 cp vimrc ~/.vimrc
 
 # sync needed vim plugin
