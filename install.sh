@@ -3,6 +3,9 @@
 # install needed package
 sudo apt-get install -y ctags cscope
 
+# install vim with ruby supported (for Command-T plugin)
+sudo apt-get install -y ruby rubygems vim-nox
+
 # copy vim setting to home
 cp -R ./vim ~/.vim
 cp vimrc ~/.vimrc
