@@ -7,7 +7,12 @@ sudo apt-get install -y ctags cscope
 sudo apt-get install -y ruby rubygems vim-nox
 
 # copy vim setting to home
-cp -R ./vim ~/.vim
+if [ -d "~/.vim" ]; then
+    cp ./vim/* ~/.vim/
+else
+    cp -R ./vim ~/.vim
+fi
+
 cp vimrc ~/.vimrc
 
 # sync needed vim plugin
