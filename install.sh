@@ -7,9 +7,9 @@ sudo apt-get install -y ctags cscope
 sudo apt-get install -y ruby rubygems vim-nox
 
 # copy vim setting to home
-if [ -d "~/.vim" ]; then
-    cp ./vim/* ~/.vim/
-else
+if [ -d "$HOME/.vim" ]; then
+    cp -r ./vim/* ~/.vim/
+else 
     cp -R ./vim ~/.vim
 fi
 
