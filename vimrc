@@ -47,6 +47,8 @@ elseif $CSCOPE_DB != ""
 endif
     set cscopeverbose
 
+set updatetime=100
+
 " Set key shortcut for cscope
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -75,3 +77,9 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Set vim-gitgutter
 let g:gitgutter_enabled = 1
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=green
+highlight GitGutterChange ctermfg=yellow
+highlight GitGutterDelete ctermfg=red
+highlight GitGutterChangeDelete ctermfg=yellow
+
